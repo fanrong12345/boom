@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<title>拓展练习</title> 
+	<style type="text/css">
+a img{border:0;}
+a img:hover{border:0;}
+body{
+	margin:0;
+	background: url(beijing.jpg);
+		background-repeat:no-repeat;
+		background-size: cover;}
+		
+/*内容*/
+
+#cs h1{
+	position:absolute;
+	top: 80px;
+	margin-left:440px;
+	font-family:"幼圆";
+	font-size: 50px;
+	color:white;
+		text-align: center;
+		}
+		
+#tm{
+	position:absolute;
+	top:180px;
+	left:400px;
+	width:550px;
+	height:300px;
+	font-family:"幼圆";
+	color:#575757;
+	font-weight:bold;}
+#tm h2{
+	font-size:28px;
+	color: white;
+	text-align: center;
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 40px;
+	}
+#tm ul{
+	font-size:20px;
+	color: white;
+	margin-top: 100px;
+	}
+#tj{
+
+	border:0;
+	font-family:"幼圆";
+	color: black;
+	font-weight:bold;
+	height:27px;
+	width:55px;
+	font-size:18px;
+	border-radius:3px;
+	position:absolute;
+	left:260px;
+	}
+#zq{
+	position:absolute;
+	width:30px;
+	height:30px;
+	left:320px;
+	top:180px;
+	font-family:"幼圆";
+	color:white;
+	font-size:30px;
+	font-weight:bold;
+	}
+/*内容*/
+		.next{color: white;
+		font-size: 20px;
+			width: 100px;
+			position:absolute;
+			right: 30px;
+			bottom: 30px;
+		}
+		
+		a{color: white;
+		text-decoration: none;}
+
+		a:hover{font-size: 24px}
+	
+
+</style>
+<script type="text/javascript">
+function myFunction()
+{
+	var abc=document.myform.answer.value;
+
+	if(abc=="answer1" || abc=="answer2")
+	document.getElementById("zq").innerHTML = "×"
+	
+	else 
+	document.getElementById("zq").innerHTML = "√"
+
+}
+</script>
+	
+	</head>
+<body>
+	
+<div id="cs">
+<h1>单项选择</h1>
+<div id="tm">
+<h2>1&nbsp;.&nbsp;最先开始的是哪个文化？</h2>
+<form action="" method="post" name="myform" id="myform">
+<ul style="list-style:none;">
+<li><input type="radio" value="answer1" name="answer">南宋文化</li>
+<li><input type="radio" value="answer2" name="answer">吴越文化</li>
+<li><input type="radio" value="answer3" name="answer">良渚文化</li>
+
+</ul>
+<input type="button" value="确定" name="submit" onclick="myFunction()" id="tj">
+	<div class="next">
+<a href="text2.html">下一题</a>
+</div>
+<div id="zq">
+
+</div>
+
+</form>
+</div>
+
+<!--内容-->
+
+</div>
+	
+	
+</body>
+</html>
